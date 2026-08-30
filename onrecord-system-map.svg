@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 930" role="img" aria-label="Target design for OnRecord v2; the final OpenAI, Parallel, and Daytona path is not yet verified end to end. On the Mac the SSD archive becomes a 45 MB record; it is uploaded once to a Daytona parent room and forked into three rooms; each room gets context from Parallel Search, selects cited moments with an OpenAI agent, verifies each claim with Parallel, and writes program.json; the Mac cuts 144p proxy segments for the selected clips and uploads them; the parent becomes the judge room, assembles rough cuts, gates on truth and ranks on craft with OpenAI, and returns the winner; the Mac conforms it from the masters for human approval; Daytona deletes rooms children-first with proof in the receipt.">
+      <style>
+  svg { font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif; color: #1A1D1B; }
+  .lane { fill: rgba(26,29,27,0.035); }
+  .box { fill: #F4F5F2; stroke: #1A1D1B; stroke-width: 1.2; }
+  .box-record { fill: rgba(11,110,127,0.08); stroke: #0B6E7F; stroke-width: 2; }
+  .t { font-size: 12.5px; font-weight: 600; fill: #1A1D1B; }
+  .d { font-size: 10px; fill: #5F6864; }
+  .l { font-size: 10px; fill: #5F6864; }
+  .h { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; fill: #5F6864; }
+  .n { font-size: 10px; font-weight: 500; fill: #0B6E7F; }
+  .flow { stroke: #1A1D1B; stroke-width: 1.4; fill: none; }
+  .flow-accent { stroke: #0B6E7F; stroke-width: 1.8; fill: none; }
+  .ctrl { stroke: #1A1D1B; stroke-width: 1.2; fill: none; stroke-dasharray: 4 4; }
+  .halo { stroke: #F4F5F2; stroke-width: 7; fill: none; }
+  .legend-swatch { fill: rgba(11,110,127,0.08); stroke: #0B6E7F; stroke-width: 2; }
+</style>
+      <rect width="1200" height="930" fill="#F4F5F2"></rect>
+      <defs>
+        <marker id="arrow" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M0,0 L8,4 L0,8 z" fill="#1A1D1B"></path>
+        </marker>
+        <marker id="arrow-accent" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M0,0 L8,4 L0,8 z" fill="#0B6E7F"></path>
+        </marker>
+      </defs>
+
+      <!-- lanes -->
+      <rect class="lane" x="16" y="8" width="364" height="882" rx="4"></rect>
+      <rect class="lane" x="396" y="8" width="364" height="882" rx="4"></rect>
+      <rect class="lane" x="776" y="8" width="408" height="882" rx="4"></rect>
+      <text class="h" x="28" y="32">YOUR MAC + SSD · MASTERS STAY · THIN HOST</text>
+      <text class="h" x="408" y="32">DAYTONA · THE EDITORIAL LOOP</text>
+      <text class="h" x="788" y="32">WEB APIS · OPENAI + PARALLEL · KEYS VIA DAYTONA SECRETS</text>
+
+      <!-- ===== MAC LANE ===== -->
+      <rect class="box" x="40" y="62" width="176" height="64" rx="3"></rect>
+      <text class="t" x="48" y="82">348 VTT transcripts</text>
+      <text class="d" x="48" y="98">+ info.json → guest · date ·</text>
+      <text class="d" x="48" y="112">chapters, per episode</text>
+
+      <rect class="box" x="232" y="62" width="128" height="64" rx="3"></rect>
+      <text class="t" x="240" y="82">MKV masters</text>
+      <text class="d" x="240" y="98">1080p · 193 GB</text>
+      <text class="d" x="240" y="112">+ 144p proxies</text>
+
+      <line class="flow" x1="128" y1="126" x2="128" y2="158" marker-end="url(#arrow)"></line>
+
+      <rect class="box-record" x="40" y="160" width="320" height="64" rx="3"></rect>
+      <text class="t" x="48" y="181">① Build the record — once, ~12 s</text>
+      <text class="d" x="48" y="197">record.sqlite · SQLite FTS5 · 45 MB · path-free</text>
+      <text class="d" x="48" y="212">67,501 windows tagged episode · guest · date · chapter</text>
+
+      <line class="flow-accent" x1="360" y1="192" x2="406" y2="192" marker-end="url(#arrow-accent)"></line>
+      <text class="l" x="416" y="150" text-anchor="start">uploaded once: record + room.py · ~12 MB gz</text>
+
+      <!-- masters never leave -->
+      <polyline class="ctrl" points="360,94 372,94 372,744 362,744" marker-end="url(#arrow)"></polyline>
+      <text class="l" x="390" y="600" text-anchor="middle" transform="rotate(-90 390 600)">masters never uploaded</text>
+
+      <!-- selections in, segments out -->
+      <polyline class="flow" points="462,420 462,440 200,440 200,448" marker-end="url(#arrow)"></polyline>
+      <text class="l" x="300" y="434" text-anchor="middle">selected clips (JSON)</text>
+
+      <rect class="box" x="40" y="450" width="320" height="56" rx="3"></rect>
+      <text class="t" x="48" y="471">⑤ Cut proxy segments — instant</text>
+      <text class="d" x="48" y="487">only the rooms' selected clips · 144p · a few MB per run</text>
+      <text class="d" x="48" y="500">(or a Daytona Volume of full proxies if venue upload allows)</text>
+
+      <polyline class="flow" points="360,480 578,480 578,558" marker-end="url(#arrow)"></polyline>
+      <text class="l" x="470" y="474" text-anchor="middle">proxy segments</text>
+
+      <!-- winner back -->
+      <polyline class="flow" points="578,660 578,700 200,700 200,704" marker-end="url(#arrow)"></polyline>
+      <text class="l" x="490" y="694" text-anchor="middle">winner program.json + rough cut + decision.json</text>
+
+      <rect class="box" x="40" y="706" width="320" height="76" rx="3"></rect>
+      <text class="t" x="48" y="727">⑦ Conform from masters — ffmpeg, fixed argv</text>
+      <text class="d" x="48" y="743">winner program.json → seek each clip from its master · 1280×720</text>
+      <text class="d" x="48" y="758">lower-thirds: guest · 20VC · date · "since then" card · title</text>
+      <text class="d" x="48" y="773">check: streams · duration · full decode</text>
+
+      <line class="flow" x1="200" y1="782" x2="200" y2="798" marker-end="url(#arrow)"></line>
+
+      <rect class="box" x="40" y="800" width="320" height="76" rx="3"></rect>
+      <text class="t" x="48" y="821">⑧ Screen — localhost, human in the loop</text>
+      <text class="d" x="48" y="837">final cut · cited moments · verdicts · draft post</text>
+      <text class="d" x="48" y="852">Approve → written to receipt.json · never posts</text>
+      <text class="d" x="48" y="867">receipt: lineage · timings · cost basis · cleanup</text>
+
+      <!-- ===== DAYTONA LANE ===== -->
+      <rect class="box-record" x="408" y="160" width="340" height="64" rx="3"></rect>
+      <text class="t" x="416" y="181">② Parent room</text>
+      <text class="d" x="416" y="197">snapshot: python + ffmpeg + openai + parallel-web · 30-min TTL</text>
+      <text class="d" x="416" y="212">egress allow-listed to two hosts · keys injected by the secrets proxy</text>
+
+      <polyline class="flow-accent" points="578,224 578,246"></polyline>
+      <line class="flow-accent" x1="462" y1="246" x2="694" y2="246"></line>
+      <line class="flow-accent" x1="462" y1="246" x2="462" y2="264" marker-end="url(#arrow-accent)"></line>
+      <line class="flow-accent" x1="578" y1="246" x2="578" y2="264" marker-end="url(#arrow-accent)"></line>
+      <line class="flow-accent" x1="694" y1="246" x2="694" y2="264" marker-end="url(#arrow-accent)"></line>
+      <text class="n" x="586" y="240">③ fork ×3 · same bytes</text>
+
+      <rect class="box-record" x="408" y="266" width="108" height="154" rx="3"></rect>
+      <text class="t" x="416" y="286">Room A</text>
+      <text class="n" x="416" y="300">strongest claims</text>
+      <text class="d" x="416" y="320">1 context · Parallel</text>
+      <text class="d" x="416" y="334">2 select · OpenAI</text>
+      <text class="d" x="416" y="348">3 verify · Parallel</text>
+      <text class="d" x="416" y="362">4 program.json</text>
+      <text class="d" x="416" y="376">+ post draft</text>
+      <text class="d" x="416" y="390">+ trace · verdicts</text>
+
+      <rect class="box-record" x="524" y="266" width="108" height="154" rx="3"></rect>
+      <text class="t" x="532" y="286">Room B</text>
+      <text class="n" x="532" y="300">the contrarian</text>
+      <text class="d" x="532" y="320">1 context · Parallel</text>
+      <text class="d" x="532" y="334">2 select · OpenAI</text>
+      <text class="d" x="532" y="348">3 verify · Parallel</text>
+      <text class="d" x="532" y="362">4 program.json</text>
+      <text class="d" x="532" y="376">+ post draft</text>
+      <text class="d" x="532" y="390">+ trace · verdicts</text>
+
+      <rect class="box-record" x="640" y="266" width="108" height="154" rx="3"></rect>
+      <text class="t" x="648" y="286">Room C</text>
+      <text class="n" x="648" y="300">the timeline</text>
+      <text class="d" x="648" y="320">1 context · Parallel</text>
+      <text class="d" x="648" y="334">2 select · OpenAI</text>
+      <text class="d" x="648" y="348">3 verify · Parallel</text>
+      <text class="d" x="648" y="362">4 program.json</text>
+      <text class="d" x="648" y="376">+ post draft</text>
+      <text class="d" x="648" y="390">+ trace · verdicts</text>
+
+      <!-- rooms -> judge room -->
+      <line class="flow" x1="694" y1="420" x2="694" y2="558" marker-end="url(#arrow)"></line>
+      <text class="l" x="702" y="500" text-anchor="start">program.json ·</text>
+      <text class="l" x="702" y="512" text-anchor="start">verification.json</text>
+
+      <!-- judge room -->
+      <rect class="box-record" x="408" y="560" width="340" height="100" rx="3"></rect>
+      <text class="t" x="416" y="581">⑥ Judge room — the parent, after the rooms return</text>
+      <text class="d" x="416" y="597">assemble 3 rough cuts from proxy segments · ffmpeg in-room</text>
+      <text class="d" x="416" y="612">gate on truth: cited window · context · verification verdict</text>
+      <text class="d" x="416" y="627">rank on craft: relevance · hook · range · arc · pacing (0–5 each)</text>
+      <text class="d" x="416" y="642">→ decision.json · winner program.json · rough cut · or abstain</text>
+
+      <!-- cleanup -->
+      <line class="ctrl" x1="694" y1="660" x2="694" y2="798" marker-end="url(#arrow)"></line>
+      <text class="l" x="702" y="732" text-anchor="start">after return</text>
+
+      <rect class="box" x="408" y="800" width="340" height="76" rx="3"></rect>
+      <text class="t" x="416" y="821">⑨ Cleanup</text>
+      <text class="d" x="416" y="837">delete children first → parent → label query = 0</text>
+      <text class="d" x="416" y="852">every step written to the receipt, failures included</text>
+      <text class="d" x="416" y="867">v1 measured: 34 s · ≈ $0.005 · v2 adds ≈ $0.15 Parallel + model</text>
+
+      <line class="ctrl" x1="408" y1="838" x2="362" y2="838" marker-end="url(#arrow)"></line>
+      <text class="l" x="384" y="830" text-anchor="middle">proof</text>
+
+      <!-- ===== WEB APIS LANE ===== -->
+      <rect class="box" x="880" y="270" width="280" height="76" rx="3"></rect>
+      <text class="t" x="888" y="291">④ OpenAI — room agent</text>
+      <text class="d" x="888" y="307">one brief per room · ≤ 8 tool calls</text>
+      <text class="d" x="888" y="322">tools: search_record · read_context · search_web · finish</text>
+      <text class="d" x="888" y="337">returns cited clip bounds + reasons + post draft</text>
+
+      <line class="flow" x1="748" y1="292" x2="878" y2="292" marker-end="url(#arrow)"></line>
+      <text class="l" x="813" y="284" text-anchor="middle">windows · tool calls</text>
+      <line class="flow" x1="880" y1="326" x2="750" y2="326" marker-end="url(#arrow)"></line>
+      <text class="l" x="813" y="340" text-anchor="middle">cited clips</text>
+
+      <rect class="box" x="880" y="366" width="280" height="96" rx="3"></rect>
+      <text class="t" x="888" y="387">④ Parallel — context + verification</text>
+      <text class="d" x="888" y="403">Search API, turbo (~250 ms): headline → what happened,</text>
+      <text class="d" x="888" y="418">who, when, why it matters, expansion terms + sources</text>
+      <text class="d" x="888" y="433">Responses low / Task base: claim → holds · outdated ·</text>
+      <text class="d" x="888" y="448">contradicted · unverifiable, with citations + confidence</text>
+
+      <line class="flow" x1="748" y1="380" x2="878" y2="380" marker-end="url(#arrow)"></line>
+      <text class="l" x="813" y="372" text-anchor="middle">headline · claims</text>
+      <line class="flow" x1="880" y1="408" x2="750" y2="408" marker-end="url(#arrow)"></line>
+      <text class="l" x="813" y="422" text-anchor="middle">excerpts · verdicts</text>
+
+      <rect class="box" x="880" y="578" width="280" height="64" rx="3"></rect>
+      <text class="t" x="888" y="599">OpenAI — judge</text>
+      <text class="d" x="888" y="615">structured scorecards · 5 criteria × 0–5</text>
+      <text class="d" x="888" y="630">abstains if best &lt; 15 or a gate fails</text>
+
+      <line class="flow" x1="748" y1="610" x2="878" y2="610" marker-end="url(#arrow)"></line>
+      <text class="l" x="813" y="602" text-anchor="middle">3 cuts + gate → scores</text>
+
+      <text class="l" x="888" y="690">Keys: Daytona secrets with a hosts allow-list —</text>
+      <text class="l" x="888" y="703">placeholder in the room, real key swapped into HTTPS</text>
+      <text class="l" x="888" y="716">headers by the outbound proxy. If egress is blocked,</text>
+      <text class="l" x="888" y="729">these calls run from the Mac; the rooms still search.</text>
+
+      <rect class="box-record" x="880" y="770" width="280" height="64" rx="3"></rect>
+      <text class="t" x="888" y="792">TARGET DESIGN · RELEASE HOLD</text>
+      <text class="d" x="888" y="808">Final OpenAI + Parallel + Daytona run, receipt,</text>
+      <text class="d" x="888" y="822">costs, rights review, and clean-clone proof pending.</text>
+
+      <!-- legend -->
+      <line class="flow" x1="40" y1="905" x2="80" y2="905" marker-end="url(#arrow)"></line>
+      <text class="l" x="90" y="909">data</text>
+      <line class="ctrl" x1="140" y1="905" x2="180" y2="905" marker-end="url(#arrow)"></line>
+      <text class="l" x="190" y="909">control · proof</text>
+      <rect class="legend-swatch" x="290" y="898" width="22" height="14" rx="2"></rect>
+      <text class="l" x="320" y="909">the record and the rooms that hold it — where the editorial work happens</text>
+    </svg>
